@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/counter.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/slideanimation.css">
+    <link href="http://fonts.cdnfonts.com/css/chinese-rocks" rel="stylesheet">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="javascript/counter.js"></script>
+    <script src="javascript/slideanimation.js"></script>
+</head>
+<body>
+    <img src="imgs/logoblack.jpg" alt="Logo of the Toronto Raptors" id="logoimg">
+    <input type="checkbox" id="active">
+    <label for="active" class="menu-btn"><span></span></label>
+    <label for="active" class="close"></label>
+    <div class="wrapper">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="roster.html">Roster</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <main>
+        <section class="main-content">
+            <div class="animation-element slide-left testimonial">
+              <img src="/imgs/wethenorth.png" alt="" id="wethenorth">
+
+              <div class="teamdesc">
+                  <h2 class="whoweare">We are the<br><br><span class="teamname">Toronto Raptors</span></h2>
+              </div>
+
+              <div class="bwrapper">
+                  <div class="counter col_fourth">
+                    <i class="fa fa-code fa-2x"></i>
+                    <h2 class="timer count-title count-number" data-to="1" data-speed="2500"></h2>
+                    <p class="count-text "># of Championships</p>
+                  </div>
+              
+                  <div class="counter col_fourth">
+                    <i class="fa fa-coffee fa-2x"></i>
+                    <h2 class="timer count-title count-number" data-to="18" data-speed="2500"></h2>
+                    <p class="count-text "># of Players</p>
+                  </div>
+              
+                  <div class="counter col_fourth">
+                    <i class="fa fa-lightbulb-o fa-2x"></i>
+                    <h2 class="timer count-title count-number" data-to="1800000000" data-speed="2500"></h2>
+                    <p class="count-text ">Net Worth ($)</p>
+                  </div>
+              
+                  <div class="counter col_fourth end">
+                    <i class="fa fa-bug fa-2x"></i>
+                    <h2 class="timer count-title count-number" data-to="27" data-speed="2500"></h2>
+                    <p class="count-text ">Years in the making</p>
+                  </div>
+              </div>
+            </div>
+
+            <div  id="bs1" class="animation-element slide-left testimonial boxsection">
+                <img src="/imgs/kawhishot.jpg" alt="" class="bsimg">
+                <div class="texttopimg">
+                  <h2>THE SHOT</h2>
+                </div>
+            </div>
+
+            <div id="bs2" class="animation-element slide-left testimonial boxsection">
+              <img src="/imgs/parade.jpg" alt="" class="bsimg">
+              <div class="texttopimg">
+                <h2>AN ENTIRE COUNTRY BEHIND US</h2>
+              </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Site footer -->
+    <footer class="footer">
+      <div class="footer__addr">
+        <h1 class="footer__logo">Toronto Raptors</h1>
+            
+        <h2>Contact</h2>
+        
+        <address>
+          Toronto, Ontario, Canada :)<br>
+              
+          <a class="footer__btn" href="/contact.html">Email Us</a>
+        </address>
+      </div>
+      
+      <ul class="footer__nav">
+        <li class="nav__item">
+          <h2 class="nav__title">Pages</h2>
+    
+          <ul class="nav__ul">
+            <li>
+              <a href="/index.html">Home</a>
+            </li>
+    
+            <li>
+              <a href="/about.html">About Us</a>
+            </li>
+                
+            <li>
+              <a href="/roster.html">Roster</a>
+            </li>
+          </ul>
+        </li>
+        
+        
+        
+        <li class="nav__item">
+          <h2 class="nav__title">Connect</h2>
+          
+          <ul class="nav__ul">
+            <li>
+              <a href="https://twitter.com/raptors">Twitter</a>
+            </li>
+            
+            <li>
+              <a href="https://www.instagram.com/raptors/?hl=en">Instagram</a>
+            </li>
+            
+            <li>
+              <a href="https://www.youtube.com/user/torontoraptors">YouTube</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      
+      <div class="legal">
+        <p>&copy; 2022 Toronto Raptors. All rights reserved.</p>
+        
+        <div class="legal__links">
+          <span>Made by <span class="heart">a Raptors fan</span> from Canada</span>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,188 @@
+/*Original Code*/
+.main-content {
+    z-index: -1;
+    color: white;
+    max-width: 1200px;
+    width: 100%;
+}
+
+#wethenorth {
+    margin: auto;
+    width: 50%;
+    display: block;
+}
+
+.teamdesc {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.whoweare {
+    text-align: center;
+}
+
+.teamname {
+    font-size: 80px;
+    font-family: 'Chinese Rocks Rg', sans-serif;
+}
+
+.bwrapper {
+    color: black;
+}
+
+.boxsection {
+    margin-top: 500px;
+}
+
+.bsimg {
+    margin: auto;
+    object-fit: fill;
+    width: 100%;
+    height: auto;
+    display: block;
+    opacity: 0.4;
+    max-height: 220;
+}
+
+.texttopimg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.texttopimg h2 {
+    font-family: 'Chinese Rocks Rg', sans-serif;
+    font-size: 100px;
+}
+
+#bs1 {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+#bs2 {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-top: 200px;
+}
+
+@media screen and (max-width: 1500px) and (min-device-width: 1000px) {
+    #wethenorth, .teamdesc{
+        max-width: 900px;
+    }
+
+    .bwrapper, .boxsection {
+        max-width: 900px;
+    }
+
+    .boxsection {
+        max-width: 100%;
+        margin: auto;
+        display: block;
+    }
+
+    #bs1 {
+        margin-top: 300px;
+    }
+
+    .count-title {
+        font-size: 30px !important;
+    }
+}
+
+
+@media screen and (max-width: 1000px) and (min-device-width: 700px){
+    #wethenorth, .teamdesc{
+        max-width: 600px;
+    }
+
+    .bwrapper {
+        max-width: 600px;
+    }
+
+    .boxsection {
+        max-width: 100%;
+        margin: auto;
+        display: block;
+    }
+
+    .texttopimg h2 {
+        font-size: 60px;
+    }
+
+    #bs1 {
+        margin-top: 300px;
+    }
+
+    .count-title {
+        font-size: 25px !important;
+    }
+}
+
+@media screen and (max-width: 700px) and (min-device-width: 500px){
+    #wethenorth, .teamdesc{
+        max-width: 400px;
+    }
+
+    .bwrapper {
+        max-width: 400px;
+    }
+
+    .boxsection {
+        max-width: 100%;
+        margin: auto;
+        display: block;
+    }
+
+    .texttopimg h2 {
+        font-size: 40px;
+    }
+
+    #bs1 {
+        margin-top: 300px;
+    }
+
+    .count-title {
+        font-size: 16px !important;
+    }
+}
+
+@media screen and (max-width: 500px) and (min-device-width: 300px){
+    #wethenorth, .teamdesc{
+        max-width: 300px;
+    }
+
+    .teamname {
+        position: relative;
+    }
+
+    .bwrapper {
+        max-width: 200px;
+    }
+
+    .boxsection {
+        max-width: 100%;
+        margin: auto;
+        display: block;
+    }
+
+    .texttopimg h2 {
+        font-size: 20px;
+    }
+
+    #bs1 {
+        margin-top: 300px;
+    }
+
+    #bs2 {
+        margin-top: 100px;
+    }
+
+    .count-title {
+        font-size: 10px !important;
+    }
+}

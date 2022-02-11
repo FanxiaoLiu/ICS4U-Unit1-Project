@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/players.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="http://fonts.cdnfonts.com/css/chinese-rocks" rel="stylesheet">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body onload="loadInfo()">
+    <script src="/javascript/player.js"></script>
+    <img src="imgs/logoblack.jpg" alt="Logo of the Toronto Raptors" id="logoimg">
+    <input type="checkbox" id="active">
+    <label for="active" class="menu-btn"><span></span></label>
+    <label for="active" class="close"></label>
+    <div class="wrapper">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="roster.html">Roster</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <main>
+        <div class="container">
+            <img src="" id="playerimg" alt="">
+            <div class="boxp">
+              <p id="pname"></p> <br>
+              <p id="page"></p><br>
+              <p id="pheight"></p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Site footer -->
+    <footer class="footer">
+      <div class="footer__addr">
+        <h1 class="footer__logo">Toronto Raptors</h1>
+            
+        <h2>Contact</h2>
+        
+        <address>
+          Toronto, Ontario, Canada :)<br>
+              
+          <a class="footer__btn" href="/contact.html">Email Us</a>
+        </address>
+      </div>
+      
+      <ul class="footer__nav">
+        <li class="nav__item">
+          <h2 class="nav__title">Pages</h2>
+    
+          <ul class="nav__ul">
+            <li>
+              <a href="/index.html">Home</a>
+            </li>
+    
+            <li>
+              <a href="/about.html">About Us</a>
+            </li>
+                
+            <li>
+              <a href="/roster.html">Roster</a>
+            </li>
+          </ul>
+        </li>
+        
+        
+        
+        <li class="nav__item">
+          <h2 class="nav__title">Connect</h2>
+          
+          <ul class="nav__ul">
+            <li>
+              <a href="https://twitter.com/raptors">Twitter</a>
+            </li>
+            
+            <li>
+              <a href="https://www.instagram.com/raptors/?hl=en">Instagram</a>
+            </li>
+            
+            <li>
+              <a href="https://www.youtube.com/user/torontoraptors">YouTube</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      
+      <div class="legal">
+        <p>&copy; 2022 Toronto Raptors. All rights reserved.</p>
+        
+        <div class="legal__links">
+          <span>Made by <span class="heart">a Raptors fan</span> from Canada</span>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>

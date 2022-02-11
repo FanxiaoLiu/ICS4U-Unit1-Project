@@ -1,0 +1,10 @@
+*{text-decoration:none; list-style:none; margin:0px; padding:0px; outline:none;}
+body{font: Arial, Helvetica, Sans-serif; background-color: black;}
+.main-content {width:100%; max-width:100%; margin:0px auto; position:relative;}
+#logoimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    width: 150px;
+}

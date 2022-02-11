@@ -1,0 +1,40 @@
+.container {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    justify-content: space-around;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#playerimg {
+    margin-bottom: 20px;
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.boxp {
+    display: inline;
+}
+
+#pname {
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Chinese Rocks Rg', sans-serif;
+}
+
+@media screen and (max-width: 410px) {
+    #playerimg {
+        width: 150px;
+        height: 150px;
+    }
+
+    #pname {
+        font-size: 40px;
+    }
+}

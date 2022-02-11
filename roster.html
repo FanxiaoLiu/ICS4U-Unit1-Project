@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/roster.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/roster.css">
+    <link href="http://fonts.cdnfonts.com/css/chinese-rocks" rel="stylesheet">
+    <script>
+        function biograph(e) {
+            if(e.className == 'about__slot') {
+                e.className = 'about__slot bio';
+            }
+            else {
+                e.className = 'about__slot';
+            }
+        }
+
+        function checkzindex() {
+            if (document.getElementById("active").checked) {
+                document.getElementById("active").checked = false;
+            }
+        }
+
+        function zindex1() {
+            if (document.getElementById("active").checked) {
+                document.getElementById("maincontent").style.zIndex = "-1";
+            }
+            else if (!document.getElementById("active").checked) {
+                document.getElementById("maincontent").style.zIndex = "0";
+            }
+        }
+    </script>
+</head>
+<body onload="checkzindex();">
+    <script src="/javascript/parserRoster.js"></script>
+    <img src="imgs/logoblack.jpg" alt="Logo of the Toronto Raptors" id="logoimg">
+    <input type="checkbox" id="active" onclick="zindex1();">
+    <label for="active" class="menu-btn"><span></span></label>
+    <label for="active" class="close"></label>
+    <div class="wrapper">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="roster.html">Roster</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <main>
+        <section class="main-content" id="maincontent">
+            <!--Parser fills in content-->
+
+            <!--<div class="players">
+                <div class="box">
+                    <button id="p1b" onclick="parse(0)">
+                        <img src="imgs/champimg.jpg" alt="Player 1">
+                        <p id="player1Text">a</p>
+                    </button>
+                </div>
+                <div class="box">
+                    <button id="p2b" onclick="parse(3)">
+                        <img src="imgs/champimg.jpg" alt="Player 1">
+                        <p id="player1Text">a</p>
+                    </button>
+                </div>
+                <div class="box">
+                    <button id="p3b" onclick="parse(6)">
+                        <img src="imgs/champimg.jpg" alt="Player 1">
+                        <p id="player1Text">a</p>
+                    </button>
+                </div>
+                <div class="box">
+                    <button id="p4b" onclick="parse(9)">
+                        <img src="imgs/champimg.jpg" alt="Player 1">
+                        <p id="player1Text">a</p>
+                    </button>
+                </div>
+                <div class="box">
+                    <button id="p5b" onclick="parse(12)">
+                        <img src="imgs/champimg.jpg" alt="Player 1">
+                        <p id="player1Text">a</p>
+                    </button>
+                </div>
+                <div class="box">
+                    <button id="p6b" onclick="parse(15)">
+                        <img src="imgs/champimg.jpg" alt="Player 1">
+                        <p id="player1Text">a</p>
+                    </button>
+                </div>
+                <div class="box">
+                    <button id="p7b" onclick="parse(18)">
+                        <img src="imgs/champimg.jpg" alt="Player 1">
+                        <p id="player1Text">a</p>
+                    </button>
+                </div>
+                <div class="box">
+                    <button id="p8b" onclick="parse(21)">
+                        <img src="imgs/champimg.jpg" alt="Player 1">
+                        <p id="player1Text">a</p>
+                    </button>
+                </div>
+                
+            </div>
+        -->
+        <h1 class="rosterheader">ROSTER</h1>
+            <div class="about__section"> <!-- Specificity container -->
+                
+                <a href="javascript:void(0);" title="Nick"><div class="about__slot">
+                    <div class="headshot" onclick="parse(0);" style="background-image:url('/imgs/player0.png');"></div>
+                
+                <div class="about__info">
+                <h4 class="name">OG Anunoby</h4>
+                <h5 class="title">Forward</h5>
+                </div>
+                    <div class="bioText">I am a full stack developer, graphic designer, 3D artist, animator, and entrepreneur.<br /><br /></div>
+                
+                
+                </div></a><a href="javascript:void(0);" title="Creative Director"><div class="about__slot"><div class="headshot" onclick="parse(3);" style="background-image:url('/imgs/player1.png');"></div>
+                <div class="about__info">
+                <h4 class="name">Fred Vanvleet</h4>
+                <h5 class="title">Guard</h5>
+                </div>
+                <div class="bioText">Austin Meowers is a lorem ipsum dalor set amet consectur adipscing.<br><br>f g+ tw li</div>
+                
+                </div></a><a href="javascript:void(0);" title="Account Manager"><div class="about__slot">
+                    <div class="headshot"  onclick="parse(6);" style="background-image:url('imgs/player2.png');"></div>
+                
+                <div class="about__info">
+                <h4 class="name">Dalano Banton</h4>
+                <h5 class="title">Forward</h5>
+                </div>
+                    <div class="bioText">Mr Whiskers is a lorem ipsum dalor set amet consectur adipscing.<br><br>f g+ tw li</div>
+                
+                </div></a><a href="javascript:void(0);" title="Staff Writer"><div class="about__slot">
+                    <div class="headshot" onclick="parse(9)" style="background-image:url('imgs/player3.png');"></div>
+                
+                <div class="about__info">
+                <h4 class="name">Scottie Barnes</h4>
+                <h5 class="title">Forward</h5>
+                </div>
+                    <div class="bioText">Boopafina is a lorem ipsum dalor set amet consectur adipscing.<br><br>f g+ tw li</div>
+                
+                
+                </div></a><a href="javascript:void(0);" title="Account Manager"><div class="about__slot">
+                    <div class="headshot"  onclick="parse(12);" style="background-image:url('imgs/player4.png');"></div>
+                
+                <div class="about__info">
+                <h4 class="name">Gary Trent Jr.</h4>
+                <h5 class="title">Guard</h5>
+                </div>
+                    <div class="bioText">Charles Bumeowski is a lorem ipsum dalor set amet consectur adipscing.<br><br>f g+ tw li</div>
+                
+                </div></a><a href="javascript:void(0);" title="Chairman"><div class="about__slot"><div class="headshot" onclick="parse(15);" style="background-image:url('imgs/player5.png');"></div>
+                <div class="about__info">
+                <h4 class="name">Precious Achiuwa</h4>
+                <h5 class="title">Forward/Center</h5>
+                </div>
+                <div class="bioText">Chariman Meow is a lorem ipsum dalor set amet consectur adipscing.<br><br>f g+ tw li</div>
+                
+                </div></a>
+
+                
+              
+            </div>    
+        </section>
+
+
+    </main>
+
+        <!-- Site footer -->
+        <footer class="footer">
+            <div class="footer__addr">
+              <h1 class="footer__logo">Toronto Raptors</h1>
+                  
+              <h2>Contact</h2>
+              
+              <address>
+                Toronto, Ontario, Canada :)<br>
+                    
+                <a class="footer__btn" href="/contact.html">Email Us</a>
+              </address>
+            </div>
+            
+            <ul class="footer__nav">
+              <li class="nav__item">
+                <h2 class="nav__title">Pages</h2>
+          
+                <ul class="nav__ul">
+                  <li>
+                    <a href="/index.html">Home</a>
+                  </li>
+          
+                  <li>
+                    <a href="/about.html">About Us</a>
+                  </li>
+                      
+                  <li>
+                    <a href="/roster.html">Roster</a>
+                  </li>
+                </ul>
+              </li>
+              
+              
+              
+              <li class="nav__item">
+                <h2 class="nav__title">Connect</h2>
+                
+                <ul class="nav__ul">
+                  <li>
+                    <a href="https://twitter.com/raptors">Twitter</a>
+                  </li>
+                  
+                  <li>
+                    <a href="https://www.instagram.com/raptors/?hl=en">Instagram</a>
+                  </li>
+                  
+                  <li>
+                    <a href="https://www.youtube.com/user/torontoraptors">YouTube</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            
+            <div class="legal">
+              <p>&copy; 2022 Toronto Raptors. All rights reserved.</p>
+              
+              <div class="legal__links">
+                <span>Made by <span class="heart">a Raptors fan</span> from Canada</span>
+              </div>
+            </div>
+          </footer>
+</body>
+</html>
