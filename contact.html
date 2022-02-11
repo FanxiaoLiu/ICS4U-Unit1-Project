@@ -11,12 +11,14 @@
     <link rel="stylesheet" href="css/footer.css">
     <link href="http://fonts.cdnfonts.com/css/chinese-rocks" rel="stylesheet">
     <script>
+        // Checks checked status of the menu when the page is loaded and changes it as needs be so that the menu is always closed
         function checkzindex() {
             if (document.getElementById("active").checked) {
                 document.getElementById("active").checked = false;
             }
         }
-
+        // If menu is closed, set zindex to 0 and if not -1.
+        // This is because I only want the menu to overlay the rest of the page when it is open. If I set the entire page to -1 even when menu is closed, page is not responsive and buttons can't be clicked
         function zindex1() {
             if (document.getElementById("active").checked) {
                 document.getElementById("maincontent").style.zIndex = "-1";
@@ -28,6 +30,7 @@
     </script>
 </head>
 <body onload="checkzindex();">
+    <!--Nav bar hamburger-->
     <img src="imgs/logoblack.jpg" alt="Logo of the Toronto Raptors" id="logoimg">
     <input type="checkbox" id="active" onclick="zindex1();">
     <label for="active" class="menu-btn"><span></span></label>
@@ -42,27 +45,35 @@
     </div>
 
     <main>
+        <!--Main content section-->
         <section class="main-content" id="maincontent">
+
             <h2 class="contactus">Email Us</h2>
             <div class="formwrapper">
+                <!--Form starts here-->
                 <form>
+                    <!--Form name box-->
                     <div class="formitem fi1">
                         <input type="text" name="sender" id="senderbox" placeholder=" " class="input" required>
                         <div class="cut"></div>
                         <label for="senderbox" class="placeholder">Name:</label>
                     </div>
                     
+                    <!--Form email box-->
                     <div class="formitem fi2">
                         <input type="email" name="email" id="emailbox" placeholder=" " class="input" required>
                         <div class="cut"></div>
                         <label for="emailbox" class="placeholder">Email</label>
                     </div>
+
+                    <!--Form message box-->
                     <div class="formitem fi2">
                         <textarea name="message" id="messagebox" placeholder=" " class="input"></textarea>
                         <div class="cut cut-short"></div>
                         <label for="messagebox" class="placeholder">Message</label>
                     </div>
 
+                    <!--Button does not do anything at the moment-->
                     <button class="submit">Submit</button>
                 </form>
             </div>

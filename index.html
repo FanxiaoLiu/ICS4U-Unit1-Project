@@ -16,12 +16,14 @@
     <script src="/javascript/slideanimation.js"></script>
 
     <script>
+        // Checks checked status of the menu when the page is loaded and changes it as needs be so that the menu is always closed
         function checkzindex() {
             if (document.getElementById("active").checked) {
                 document.getElementById("active").checked = false;
             }
         }
-
+        // If menu is closed, set zindex to 0 and if not -1.
+        // This is because I only want the menu to overlay the rest of the page when it is open. If I set the entire page to -1 even when menu is closed, page is not responsive and buttons can't be clicked.
         function zindex1() {
             if (document.getElementById("active").checked) {
                 document.getElementById("maincontent").style.zIndex = "-1";
@@ -50,6 +52,7 @@
     <main>
         <section class="main-content" id="maincontent">
             <div class="showcase">
+                <!--Slideshow-->
                 <div class="card animation-element slide-left testimonial">
     
                     <div class="card_part card_part-one">
@@ -70,11 +73,15 @@
                 
                 </div>
 
+                <!--News section-->
                 <div class="newssection animation-element slide-left testimonial">
                     <h2 class="mainheader">
                         News
                     </h2>
+
+                    <!--News tabs-->
                     <div class="newstabs">
+                        <!--A tab-->
                         <div class="box" id="box1">
                             <img src="/imgs/raptorshome.jpg" alt="" class="boximg">
                             <p class="homenewsimg">News1</p>
@@ -94,10 +101,11 @@
                     </div>
                 </div>
                 
+                <!--Accordion section for Shop section-->
                 <div class="shopcontainer animation-element slide-left testimonial">
                   <h2 class="mainheader">Shop</h2>
                   <div class="ia-container">
-                  
+                    <!--Every figure is a Section of accordion-->
                     <figure>
                       <img src="imgs/raptorshome.jpg" alt="image01" />
                       <input type="radio" name="radio-set" checked="checked"/>

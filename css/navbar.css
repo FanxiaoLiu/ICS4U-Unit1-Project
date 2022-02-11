@@ -1,3 +1,5 @@
+/*Hamburger nav bar, slide overlay animation taken partially from https://codepen.io/yuhomyan/pen/ExKvNVa*/
+
 *{
     margin: 0;
     padding: 0;
@@ -149,4 +151,4 @@
      transition-delay: .6s;
     transform: translateX(-100px);
   }
-  
+/*media queries not really needed*/

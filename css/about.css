@@ -1,4 +1,4 @@
-/*Original Code*/
+/*Sets the styles for the entire content of the page*/
 .main-content {
     z-index: -1;
     color: white;
@@ -6,12 +6,14 @@
     width: 100%;
 }
 
+/*Styles for the header*/
 #wethenorth {
     margin: auto;
     width: 50%;
     display: block;
 }
 
+/**/
 .teamdesc {
     width: 100%;
     max-width: 1200px;
@@ -22,19 +24,23 @@
     text-align: center;
 }
 
+/*Toronto Raptors*/
 .teamname {
     font-size: 80px;
     font-family: 'Chinese Rocks Rg', sans-serif;
 }
 
+/*Color of the wrapper for the counter is black, all other styles are in the counter.css*/
 .bwrapper {
     color: black;
 }
 
+/*Sets the boxsection margin*/
 .boxsection {
     margin-top: 500px;
 }
 
+/*Makes the image in the boxes centered and look nice*/
 .bsimg {
     margin: auto;
     object-fit: fill;
@@ -45,6 +51,7 @@
     max-height: 220;
 }
 
+/*Puts text container over image and centered*/
 .texttopimg {
     position: absolute;
     top: 50%;
@@ -52,6 +59,7 @@
     transform: translate(-50%, -50%);
 }
 
+/*Sets style for text*/
 .texttopimg h2 {
     font-family: 'Chinese Rocks Rg', sans-serif;
     font-size: 100px;
@@ -69,6 +77,8 @@
     color: white;
     margin-top: 200px;
 }
+
+/*Media queries*/
 
 @media screen and (max-width: 1500px) and (min-device-width: 1000px) {
     #wethenorth, .teamdesc{

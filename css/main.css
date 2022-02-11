@@ -1,3 +1,5 @@
+/*Style for the entire page and the logo at the top*/
+
 *{text-decoration:none; list-style:none; margin:0px; padding:0px; outline:none;}
 body{font: Arial, Helvetica, Sans-serif; background-color: black;}
 .main-content {width:100%; max-width:100%; margin:0px auto; position:relative;}

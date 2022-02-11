@@ -1,3 +1,5 @@
+/*Sets styles for the header of page*/
+
 .contactus {
     font-size: 80px;
     font-family: 'Chinese Rocks Rg', sans-serif;
@@ -6,6 +8,8 @@
     margin-bottom: 50px;
     margin-top: 50px;
 }
+
+/*Sets the container's styles*/
 
   .formcontainer {
     background-color: #15172b;
@@ -17,6 +21,8 @@
     
   }
   
+/*form styles, makes it centered*/
+
 form {
     max-width: 500px;
     margin: auto;
@@ -36,6 +42,8 @@ form {
     margin-top: 30px;
   }
   
+/*Styles for the input boxes including textarea*/
+
   .input {
     background-color: #303245;
     border-radius: 12px;
@@ -49,6 +57,8 @@ form {
     width: 100%;
   }
   
+/*Sets the styles for the background when the text moves upwards*/
+
   .cut {
     background-color: #000000;
     border-radius: 10px;
@@ -70,6 +80,8 @@ form {
     transform: translateY(8px);
   }
   
+/*Sets the styles of the text in the textboxes (placeholders)*/
+
   .placeholder {
     color: #65657b;
     font-family: sans-serif;
@@ -82,6 +94,8 @@ form {
     top: 20px;
   }
   
+/*Sets the style of everything in the boxes when it is clicked*/
+
   .input:focus ~ .placeholder,
   .input:not(:placeholder-shown) ~ .placeholder {
     transform: translateY(-30px) translateX(10px) scale(0.75);
@@ -94,6 +108,8 @@ form {
   .input:focus ~ .placeholder {
     color: #ce1141;
   }
+
+  /*Styles of the button*/
   
   .submit {
     background-color: #08d;
@@ -113,61 +129,13 @@ form {
   .submit:active {
     background-color: #06b;
   }
-  
 
-  @media screen and (max-width: 720px) {
-    .ia-container { 
-		width: 320px; 
-	}
-	
-	.ia-container figure { 
-		left: 20px; 
-		width: 180px; 
-	}
-	
-	.ia-container input { 
-		width: 20px; 
-	}
-	
-	.ia-container input:checked ~ figure { 
-		left: 180px; 
-	}
-	
-	.ia-container figcaption span { 
-		font-size: 12px; 
-		letter-spacing: 2px; 
-		padding: 10px; 
-		margin-top: -20px; 
-	} 
-}
+/*Media query section if needed (probably not though since it looks good enough on its own)*/
 
 /*
 
 @media screen and (max-width: 400px) {
-    .ia-container { 
-		width: 200px; 
-	}
-	
-	.ia-container figure { 
-		left: 10px; 
-		width: 180px !important; 
-	}
-	
-	.ia-container input { 
-		width: 10px; 
-	}
-	
-	.ia-container input:checked ~ figure { 
-		left: 70px; 
-	}
-	
-	.ia-container figcaption span { 
-		font-size: 5px; 
-		letter-spacing: 1px; 
-		padding: 5px; 
-		margin-top: -20px; 
-		text-align: left;
-	} 
+
 
 }
 

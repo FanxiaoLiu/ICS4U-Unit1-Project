@@ -1,3 +1,5 @@
+/*Sets global styles for the footer*/
+
 .footer {
   display: flex;
   flex-flow: row wrap;
@@ -13,23 +15,31 @@
   flex:  1 100%;
 }
 
+/*Sets it for the address section*/
+
 .footer__addr {
   margin-right: 1.25em;
   margin-bottom: 2em;
 }
 
+/*Sets the style for the logo*/
+
 .footer__logo {
   font-family: 'Pacifico', cursive;
   font-weight: 400;
-  text-transform: lowercase;
+  text-transform: uppercase;
   font-size: 1.5rem;
 }
+
+/*sets font of the h2*/
 
 .footer__addr h2 {
   margin-top: 1.3em;
   font-size: 15px;
   font-weight: 400;
 }
+
+/*Sets the style for title of each footer section*/
 
 .nav__title {
   font-weight: 400;
@@ -40,6 +50,8 @@
   font-style: normal;
   color: #999;
 }
+
+/*Sets the style for each button*/
 
 .footer__btn {
   display: flex;
@@ -55,6 +67,8 @@
   font-size: 1rem;
   padding: 0 1.3em;
 }
+
+/*Makes the list appear normal, no list-styles etc.*/
 
 .footer ul {
   list-style: none;
@@ -88,6 +102,8 @@
   column-gap: 1.25em;
 }
 
+/*Sets style for legal*/
+
 .legal {
   display: flex;
   flex-wrap: wrap;
@@ -102,6 +118,8 @@
 .heart {
   color: #2f2f2f;
 }
+
+/*Media queries*/
 
 @media screen and (min-width: 24.375em) {
   .legal .legal__links {

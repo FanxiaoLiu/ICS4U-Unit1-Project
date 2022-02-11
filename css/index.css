@@ -1,4 +1,4 @@
-
+/*Sets styles for the newssection*/
 
 .newssection {
     display: flex;
@@ -9,6 +9,8 @@
     max-width: 1200px;
 }
 
+/*Makes the newstabs section in a grid and sets the styles for that*/
+
 .newstabs {
     display: grid;
     grid-template-columns: auto auto;
@@ -17,6 +19,8 @@
     column-gap: 20px;
     row-gap: 20px;
 }
+
+/*Sets the box styles for each of the boxes*/
 
 .box {
     position: relative;
@@ -43,11 +47,15 @@
     grid-row: 2/3;
 }
 
+/*Sets the img to be the size of its container*/
+
 .boximg {
     width: 100%;
     height: 100%;
     z-index: 1;
 }
+
+/*This is the text over the image, sets it so that it is on top fo the image, could get a little funky as width of screen decreases since position is absolute. But media queries solves some of that*/
 
 .homenewsimg {
     position: absolute;
@@ -60,6 +68,8 @@
     font-size: 30px;
     background: rgba(204, 204, 204, 0.5);
 }
+
+/*Sets the style of the overall shop container, the accordion inside is set using css/accordion.css*/
 
 .shop {
     display: flex;
@@ -147,6 +157,8 @@
     text-align: center;
     width: 100%;
 }
+
+/*media queries*/
 
 @media screen and (max-width: 1500px) and (min-device-width: 1000px) {
     .newssection{

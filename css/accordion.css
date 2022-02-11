@@ -1,3 +1,5 @@
+/*Makes the shop a flex container and sets relevant styles*/
+
 .shopcontainer {
     display: flex;
     flex-direction: column;
@@ -27,6 +29,8 @@
     margin: auto;
     text-align: center;
 }
+
+/*Code from here is for the accordion section from https://tympanus.net/codrops/2012/06/06/image-accordion-with-css3/*/
 
 .ia-container {
 	width: 685px;

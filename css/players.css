@@ -1,3 +1,5 @@
+/*Sets the style for the entire container. Makes it a flexbox and centered*/
+
 .container {
     color: #ffffff;
     display: flex;
@@ -11,6 +13,8 @@
     margin-bottom: 100px;
 }
 
+/*Sets styles for the image*/
+
 #playerimg {
     margin-bottom: 20px;
     width: 200px;
@@ -22,11 +26,15 @@
     display: inline;
 }
 
+/*Text*/
+
 #pname {
     text-align: center;
     font-size: 60px;
     font-family: 'Chinese Rocks Rg', sans-serif;
 }
+
+/*One media query because without it the image and text looks squished*/
 
 @media screen and (max-width: 410px) {
     #playerimg {
