@@ -24,8 +24,7 @@
 
 /*Sets the style for the logo*/
 
-.footer__logo {
-  font-family: 'Pacifico', cursive;
+.footer__logo { 
   font-weight: 400;
   text-transform: uppercase;
   font-size: 1.5rem;
